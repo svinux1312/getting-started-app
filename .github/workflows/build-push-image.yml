@@ -12,8 +12,8 @@ jobs:
       - name: Login to Docker Registry
         uses: docker/login-action@v1
         with:
-          username: svinux
-          password: W$#7EnK8rr*X4&xs2x!L9u8bLYE3@v8P
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
