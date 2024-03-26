@@ -15,8 +15,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
+          username: ${{ secrets.svinux }}
+          password: ${{ secrets.!b%8U5sy8WzBT$gsXykF@G^KB@q!&74U }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
