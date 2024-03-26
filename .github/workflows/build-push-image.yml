@@ -12,13 +12,12 @@ jobs:
       - name: Login to Docker Registry
         uses: docker/login-action@v1
         with:
-          registry: ghcr.io
-          username: ${{ secrets.svinux }}
-          password: ${{ secrets.W$#7EnK8rr*X4&xs2x!L9u8bLYE3@v8P }}
+          username: svinux
+          password: W$#7EnK8rr*X4&xs2x!L9u8bLYE3@v8P
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
             context: .
             file: ./Dockerfile
             push: true
-            tags: ghcr.io/svinux/getting-started:latest
+            tags: svinux/getting-started:latest
