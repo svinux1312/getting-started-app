@@ -9,6 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.svinux }}
+          password: ${{ secrets.!b%8U5sy8WzBT$gsXykF@G^KB@q!&74U }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
