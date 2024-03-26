@@ -6,6 +6,6 @@ name: build and push image
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: ubuntu-latest
+    runs-on: getting-image:latest
     steps:
       - uses: actions/checkout@v3
