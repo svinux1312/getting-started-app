@@ -14,7 +14,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ secrets.svinux }}
-          password: ${{ secrets.!b%8U5sy8WzBT$gsXykF@G^KB@q!&74U }}
+          password: ${{ secrets.W$#7EnK8rr*X4&xs2x!L9u8bLYE3@v8P }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
